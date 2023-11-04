@@ -3,38 +3,38 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section className="hero-wrapper " id="Home">
-      <div className="profile-container innerWidth">
-        <div className="paddings innerWidth profile-innerContainer ">
+    <section className="m-16" id="Home"  >
+      <div>
+        <div className="md:flex md:justify-between p-2 items-center md:px-18 profile-innerContainer">
           {/* hero left side */}
-          <div className="hero-left innerWidth">
-            <div className="hero-title primaryText">
-              <h1>
+          <div >
+            <div>
+              <h1 className="text-[32px] font-bold md:pb-10">
                 Full-Stack <br /> Developer/SDE
               </h1>
             </div>
-            <div className="hero-intro ">
-              <p className="secondaryText">
+            <div className="text-xl p-1">
+              <p >
                 Hi, I'm Harsh Kumar. As a highly skilled IT consultant and Full Stack Developer, I excel in technologies such as React, JavaScript, Git, Python, and more. With a track record of solving complex problems, Handling and designing databases in MongoDB, MySQL and excelling in Coding Platforms, I am well-equipped for a Software Development Engineer role.
               </p>
             </div>
-            <div className="social-links">
-              <a href="https://github.com/HarshUmpoxy" target="_blank">
+            <div className="flex  justify-start px-2 pt-6 pb-6 mx-auto">
+              <a href="https://github.com/HarshUmpoxy" target="_blank" className="px-2">
                 <img src="../src/assets/github.png" alt="github" width={35} />
               </a>
-              <a href="https://www.linkedin.com/in/sai-manikanta-andey/" target="_blank">
+              <a href="https://www.linkedin.com/in/harsh-kumar-24318b207/" target="_blank" className="px-2">
                 <img src="../src/assets/linkedin.png" alt="linkedin" width={35} />
               </a>
             </div>
             {/* tech stack beginning */}
-            <div className=" innerWidth tech-stack">
-              <div className="techstack-title ">
-                <h4 className="innerWidth">
+            <div className="flex flex-wrap justify-evenly">
+              <div className="flex flex-start px-4">
+                <h4>
                   <span className="font-bold text-2xl">Stack </span>
                   <span>|</span>
                 </h4>
               </div>
-              <div className="tech-stack-icons">
+              <div className="gap-6 flex flex-wrap">
                 <img src="./src/assets/api.png" alt="html" width={50} />
                 <img src="./src/assets/html.png" alt="html" width={50} />
                 <img src="./src/assets/tailwindcss.png" alt="html" width={50} />
@@ -51,9 +51,9 @@ const Hero = () => {
           </div>
 
           {/* hero right side */}
-          <div className="hero-right innerWidth">
-            <div className=" flexCenter image-container">
-              <img src="./src/assets/myimg.jpg" alt="profilepic" width={600} />
+          <div>
+            <div className="flex justify-center rounded-full overflow-hidden border-4 border-yellow-500">
+              <img src="./src/assets/myimg.jpg" alt="profilepic" width={650} />
             </div>
           </div>
         </div>

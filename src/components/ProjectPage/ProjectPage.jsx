@@ -57,7 +57,7 @@ const Project = () => {
   return (
     <section className="project-wrapper" id="Projects">
       <div className="paddings innerWidth project-container">
-        <h2 className="Heading">PROJECTS</h2>
+        <h2 className="text-[#0775F0] text-2xl font-semibold Heading pt-8">PROJECTS</h2>
         {projectData.map((eachObj) => {
           return (
             <div className="innerContainer" key={eachObj.id}>
@@ -65,7 +65,7 @@ const Project = () => {
                 <img src={eachObj.image} alt={eachObj.title} width={350} />
               </div>
               <div className="project-details ">
-                <div className="project-title">
+                <div className="text-2xl font-semibold project-title">
                   <h4> {eachObj.title} </h4>
                 </div>
                 <div className="project-description secondaryText">
@@ -81,7 +81,7 @@ const Project = () => {
                     <button>
                       {" "}
                       <a href={eachObj.githubUrl} target="_blank">
-                        <div className="buttons-inside">
+                        <div className="buttons-inside bg-yellow-500 p-2 rounded-l">
                           Github
                           <FaGithub />
                         </div>

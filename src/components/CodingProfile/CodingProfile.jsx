@@ -35,10 +35,11 @@ const CodingProfiles = () => {
 
   return (
     <>
+    <div className="md:h-1/2">
     <h1 className="text-2xl font-semibold my-4">My Coding Profiles</h1>
       
     <div className="bg-gray-100 p-4 overflow-x-auto whitespace-nowrap">
-      <div className="flex space-x-4 justify-between p-3">
+      <div className="flex space-x-4 justify-evenly p-3">
         {profiles.map((profile, index) => (
           <div
             key={index}
@@ -55,6 +56,7 @@ const CodingProfiles = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
     </>
   );

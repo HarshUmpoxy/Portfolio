@@ -1,20 +1,21 @@
 import React from 'react'
 import './About.css'
+
 const About = () => {
   return (
-    <section className="about-wrapper" id="About">
-      <div className="paddings innerWidth about-container">
+    <section className="md:h-1/2" id="About">
+      <div className="flex justify-between">
         {/* left side */}
-        <div className=" about-image">
+        <div className="w-1/2 about-image">
           <img src="../src/assets/computeLogic.jpg" alt="frontend" width={400} />
         </div>
         {/* right side */}
-        <div className="about">
-          <div className="about-title">
+        <div className="w-1/2 about">
+          <div className="text-[#0775F0] text-2xl font-semibold">
             <h2>ABOUT</h2>
           </div>
-          <div className="about-para ">
-            <p className="secondaryText">
+          <div className="about-para flex items-center">
+            <p className="text-xl p-1 pt-8">
               A
               Passionate and dedicated Frontend Developer with a keen eye for
               detail and a strong foundation in web technologies like HTML, CSS,

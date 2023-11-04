@@ -8,7 +8,7 @@ const Header = () => {
     const [OpenMenu,SetOpenMenu]=useState(false)
     
   return (
-    <section className="container w-full z-10 mx-auto">
+    <section className="container w-full z-10 mx-auto" >
       <header>
         <nav className="flex justify-between px-4 pt-2">
           <div>
@@ -39,25 +39,26 @@ const Header = () => {
               </li>
             </ul>
             
-          
+          <div className="position:absolute md:hidden">
           <OutsideClickHandler onOutsideClick={ () => SetOpenMenu(false) }> 
-            <GiHamburgerMenu  className=' md:hidden h-6 w-8 position: fixed;' onClick={() => SetOpenMenu((prev) => !prev)} />
-            <div
-              className={` pt-6 transition-transform transform ${
+            <GiHamburgerMenu  className=' md:hidden h-6 w-8' onClick={() => SetOpenMenu((prev) => !prev)} />
+            { OpenMenu && <div
+              className={` z-1 pt-6 transition-transform transform ${
                 OpenMenu ? 'translate-x-0' : 'translate-x-[600px]'
               }`}
             >
-              <ul className="flex flex-col bg-yellow-500 rounded-xl px-1 font-semibold transition-shadow">
-              <li className='px-2 hover:text-yellow-500 font-large'>
+              <div>
+              <ul className="flex flex-col bg-yellow-500 rounded-xl px-1 font-semibold transition-shadow pt-2 pb-2">
+              <li className='px-2 hover:text-white font-large'>
                 <a href="/">Home</a>
               </li>
-              <li className='px-2 hover:text-yellow-500 text-semibold font-large'>
+              <li className='px-2 hover:text-white text-semibold font-large'>
                 <a href="#About">About</a>
               </li>
-              <li className='px-2 hover:text-yellow-500 text-semibold font-large'>
+              <li className='px-2 hover:text-white text-semibold font-large'>
                 <a href="#Projects">Projects</a>
               </li>
-              <li className='px-2 hover:text-yellow-500 text-semibold font-large'>
+              <li className='px-2 hover:text-white text-semibold font-large'>
                 <a
                   href="https://drive.google.com/file/d/1osi-FXGga24lMLYu2gjc1fAEyIKMth6M/view?usp=drive_link"
                   target="_blank"
@@ -66,12 +67,15 @@ const Header = () => {
                   Resume
                 </a>
               </li>
-              <li className='px-2 hover:text-yellow-500 text-semibold font-large'>
+              <li className='px-2 hover:text-white text-semibold font-large'>
                 <a href="#Contact">Contact</a>
               </li>
               </ul>
-            </div>                    
+              </div>
+            </div>
+            }                   
           </OutsideClickHandler>
+          </div>
         </nav>
       </header>
     </section>

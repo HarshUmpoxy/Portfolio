@@ -1,56 +1,3 @@
-// import React from "react";
-// import { FiMail } from "react-icons/fi";
-// import "./Contact.css";
-// import { useRef, useEffect, useState } from "react";
-// import emailjs from "@emailjs/browser";
-
-// const Contact = () => {
-//   return (
-//     <section className="paddings innerWidth contact-wrapper" id="Contact">
-//       <div className="contact-container">
-//         <div className="contact-title">
-//           <h3>CONTACT</h3>
-//         </div>
-//         <div className="container-contact">
-//           <div className="left">
-//             <p className="  para secondaryText">
-//               Feel free to reach out for
-//               <strong style={{ color: "black" }}> job opportunities</strong> I am a fresher graduating in Computer Science in 2024 looking for Software Developent roles. You can ping me for any other inquiries and I am open to networking with like-minded people in the Technology Domain.
-
-// hi harsh, congratulations on making this portfolio project. just customize it, write every logic by your own hand. getting every idea behind key stroke and finally be assured in God. Jai shree ram
-
-//             </p>
-//           </div>
-//           <div className="email para ">
-//             <div className="mail">
-//               <FiMail stroke="blue" />
-//               Mail
-//             </div>
-//             <div className="mailId">
-//               <p>harshgarg2550@gmail.com</p>
-//             </div>
-//             <button className="bg-blue">
-//               <a
-//                 href="harshgarg2550@gmail.com"
-//                 className="contact-button"
-//               >
-//                 {" "}
-//                 Contact
-//               </a>
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//       <div className="copyrights secondaryText">
-//         &copy; Harsh Kumar
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Contact;
-
-
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 emailjs.init('fDYzeBq_MjXMX_Myz');
@@ -83,12 +30,19 @@ const Contact = () => {
   };
 
   return (
-    <div className="mx-auto p-6 max-w-lg " id="Contact">
-      <h1 className="text-2xl font-semibold mb-4">Contact Me</h1>
+    <>
+    <h1 className="text-2xl font-semibold mb-4" id="Contact">Contact Me</h1>
+    <div className="mx-auto p-6 md:w-full flex justify-around items-center" >
+    {/* md:grid-cols-2 w-full */}
+      <div>
       {isSent ? (
-        <p className="text-green-500">Email Sent! Thank you.</p>
-      ) : null}
-      <form onSubmit={sendEmail} className="space-y-4">
+        <p className="text-green-500 text-3xl">Email Sent! Thank you.</p>
+      ) : <p className='text-[#0775F0] font-semibold pt-2 pb-8 text-3xl'>Feel Free to React out</p>}
+      <p className='pt-6 text-lg font-semibold font-montserrat pb-1'>Mail me here: <img src='../src/assets/mail.png' className='h-8 inline-flex'></img>
+      <br/>
+      <a href='mailto:cybercreaterharsh@gmail.com' className='text-base bg-blue-500 hover:bg-blue-600 text-white rounded-l p-1 pt-1 px-3'>harshgarg2550@gmail.com</a></p>
+      </div>
+      <form onSubmit={sendEmail} className="space-y-4 w-1/3 px-2">
         <div>
           <label className="block text-sm font-medium text-gray-700">Name:</label>
           <input
@@ -122,7 +76,9 @@ const Contact = () => {
           Send Email
         </button>
       </form>
+      
     </div>
+    </>
   );
 };
 
