@@ -14,10 +14,12 @@ function App() {
     <>
     <div>
       <Header/>
-      <div style={{height:'100vh'}} className='flex items-center'>
-      <Hero/>
+      <div style={{height:'100vh'}} className='flex items-center max-md:mt-60'>
+        <Hero/>
       </div>
-      <About/>   
+      <div className='max-md:mt-60'>
+      <About/>  
+      </div> 
       <CodingProfiles/>
       <div style={{paddingTop:'20vh'}}>
       <ProjectPage/>

@@ -4,13 +4,13 @@ import './About.css'
 const About = () => {
   return (
     <section className="md:h-1/2" id="About">
-      <div className="flex justify-between">
+      <div className="flex md:justify-between max-md:flex-col">
         {/* left side */}
-        <div className="w-1/2 about-image">
+        <div className="w-1/2 about-image max-md:hidden">
           <img src="../src/assets/computeLogic.jpg" alt="frontend" width={400} />
         </div>
         {/* right side */}
-        <div className="w-1/2 about">
+        <div className="md:w-1/2 about">
           <div className="text-[#0775F0] text-2xl font-semibold">
             <h2>ABOUT</h2>
           </div>
