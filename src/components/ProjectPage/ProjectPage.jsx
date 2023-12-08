@@ -36,7 +36,7 @@ const Project = () => {
       ],
       liveUrl: "",
       githubUrl:
-        "https://github.com/HarshUmpoxy",
+        "https://github.com/HarshUmpoxy/MERNattendance-cvTracker",
     },
     {
       id: 3,
@@ -51,7 +51,7 @@ const Project = () => {
         { id: 2, tech: "ML" },
       ],
       liveUrl: "",
-      githubUrl: "https://github.com/HarshUmpoxy",
+      githubUrl: "https://github.com/HarshUmpoxy/SmartShopRecommender",
     },
   ];
   return (
