@@ -99,10 +99,10 @@ import { CodechefProfile} from './Codechef';
 // Create a separate ProfileCard component
 const ProfileCard = ({ platform, username, url, img, profileData }) => {
   return (
-    <div className="flex-shrink-0 max-md:w-full  w-60 bg-white p-4 rounded-md shadow-sm hover:shadow-xl hover:scale-105 transition duration-300 ease-in-out">
+    <div className="flex-shrink-0 max-md:w-2/3  w-60 bg-white p-4 rounded-md shadow-sm hover:shadow-xl hover:scale-105 transition duration-300 ease-in-out">
       <h2 className="text-xl font-semibold">{platform}</h2>
       <div className="text-white font-semibold flex flex-col justify-center">
-        <div className="flex flex-row items-center justify-around pt-6 text-blue-700 hover:underline">
+        <div className="flex flex-row items-center justify-around pt-6 text-blue-700 hover:underline ">
           <img src={img} alt={platform} />
           <a href={url} target="_blank" rel="noopener noreferrer">
             {username}
@@ -111,7 +111,7 @@ const ProfileCard = ({ platform, username, url, img, profileData }) => {
         {platform === "LeetCode" && profileData && (
           <div className="p-4">
             {/* <h1 className="text-2xl font-bold mb-4">Leetcode Profile</h1> */}
-            <div className="bg-yellow-400 p-4 rounded shadow-md">
+            <div className="bg-yellow-400 p-4 rounded shadow-md ">
               <p>Acceptance: {profileData.acceptanceRate}%</p>
               <p>Easy: {profileData.easySolved}</p>
               <p>Medium: {profileData.mediumSolved}</p>
@@ -215,11 +215,17 @@ const CodingProfiles = () => {
   return (
     <div className="md:h-1/2">
       <h1 className="text-2xl font-semibold my-4">My Coding Profiles</h1>
-      <div className="bg-gray-100 p-4 overflow-x-auto whitespace-nowrap">
-        <div className="flex space-x-12 justify-around p-3">
+      <div className="bg-gray-100 p-4 
+      overflow-x-scroll whitespace-nowrap"
+      >
+        <div className="flex justify-around"
+        // justify-around"
+        >
+          {/* <div className="mx-3"> */}
           {profiles.map((profile, index) => (
             <ProfileCard key={index} {...profile} />
           ))}
+          {/* </div> */}
         </div>
       </div>
     </div>

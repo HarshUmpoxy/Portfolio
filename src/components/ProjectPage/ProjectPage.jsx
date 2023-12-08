@@ -17,9 +17,9 @@ const Project = () => {
         { id: 2, tech: "Tailwind CSS" },
         { id: 2, tech: "Appwrite" },
       ],
-      liveUrl: "",
+      liveUrl: "https://social-echo-harshumpoxy.vercel.app/",
       githubUrl:
-        "https://github.com/HarshUmpoxy",
+        "https://github.com/HarshUmpoxy/SocialEcho",
     },
 
     {
