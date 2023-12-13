@@ -39,7 +39,7 @@ const Hero = () => {
                 </h4>
               </div>
               <div className="gap-6 flex flex-wrap">
-                <img src="./src/assets/api.png" alt="html" width={50} />
+                <img src="../../assets/api.png" alt="html" width={50} />
                 <img src="./src/assets/html.png" alt="html" width={50} />
                 <img src="./src/assets/tailwindcss.png" alt="html" width={50} />
                 <img src="./src/assets/react.png" alt="python" width={50} />
