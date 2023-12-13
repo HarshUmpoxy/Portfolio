@@ -2,9 +2,9 @@ import React from "react";
 import "./ProjectPage.css";
 import { FaGithub } from "react-icons/fa";
 import {HiExternalLink} from "react-icons/hi"
-import socialechoimg from "../../assets/SocialEcho.jpg"
-import attendancetrackerimg from "../../assets/AttendanceTracker.jpg"
-import smartshopimg from "../../assets/smartShop.png"
+// import socialechoimg from "../../assets/SocialEcho.jpg"
+// import attendancetrackerimg from "../../assets/AttendanceTracker.jpg"
+// import smartshopimg from "../../assets/smartShop.png"
 
 const Project = () => {
   const projectData = [
@@ -28,7 +28,7 @@ const Project = () => {
     {
       id: 2,
       title: "Attendance Tracking System",
-      image: {attendancetrackerimg},
+      image: "../../assets/AttendanceTracker.jpg",
       projectDescription:
         "Built a website using ReactJs that tracks the attendance of students. Proper CRUD operations have been implemented and each student can track his/her login after successful login. Authentication, middleware, jws token, expiration of login and Google GeoLocation API has been integrated in the project.",
       stack: [
@@ -44,7 +44,7 @@ const Project = () => {
     {
       id: 3,
       title: "Smart Shop Recommender",
-      image: {smartshopimg},
+      image: "../../assets/smartShop.png",
       projectDescription:
         "Integrated Smart Shop Recommender, merging Fashion, Electronics, and Books systems. Utilized collaborative and content-based filtering, plus TensorFlow for image analysis, achieving personalized recommendations. Expert data preprocessing ensured seamless handling of extensive datasets.",
       stack: [
@@ -65,7 +65,7 @@ const Project = () => {
           return (
             <div className="innerContainer" key={eachObj.id}>
               <div className="project-image alignCenter">
-                <img src=eachObj.image alt={eachObj.title} width={350} />
+                <img src={eachObj.image} alt={eachObj.title} width={350} />
               </div>
               <div className="project-details ">
                 <div className="text-2xl font-semibold project-title">
