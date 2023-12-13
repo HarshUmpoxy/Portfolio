@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import myimage from "./src/assets/myimg.jpg"
 
 const Hero = () => {
   return (
@@ -56,7 +57,7 @@ const Hero = () => {
           {/* hero right side */}
           <div>
             <div className="flex justify-center rounded-full overflow-hidden border-4 border-yellow-500">
-              <img src="./src/assets/myimg.jpg" alt="profilepic" width={650} />
+              <img src={myimage} alt="profilepic" width={650} />
             </div>
           </div>
         </div>
