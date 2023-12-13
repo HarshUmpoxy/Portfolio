@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import {HiExternalLink} from "react-icons/hi"
 import socialechoimg from "../../assets/SocialEcho.jpg"
 import attendancetrackerimg from "../../assets/AttendanceTracker.jpg"
-import smartshopimg from "../../smartShop.png"
+import smartshopimg from "../../assets/smartShop.png"
 
 const Project = () => {
   const projectData = [
