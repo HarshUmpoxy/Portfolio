@@ -65,7 +65,7 @@ const Project = () => {
           return (
             <div className="innerContainer" key={eachObj.id}>
               <div className="project-image alignCenter">
-                <img src={eachObj.image} alt={eachObj.title} width={350} />
+                <img src=eachObj.image alt={eachObj.title} width={350} />
               </div>
               <div className="project-details ">
                 <div className="text-2xl font-semibold project-title">
