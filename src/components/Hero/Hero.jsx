@@ -20,13 +20,13 @@ const Hero = () => {
             </div>
             <div className="flex  justify-start px-2 pt-6 pb-6 mx-auto">
               <a href="https://github.com/HarshUmpoxy" target="_blank" className="px-2">
-                <img src="../src/assets/github.png" alt="github" width={35} />
+                <img src="./src/assets/github.png" alt="github" width={35} />
               </a>
               <a href="https://www.linkedin.com/in/harsh-kumar-24318b207/" target="_blank" className="px-2">
-                <img src="../src/assets/linkedin.png" alt="linkedin" width={35} />
+                <img src="./src/assets/linkedin.png" alt="linkedin" width={35} />
               </a>
               <a href="https://twitter.com/HarshUmpoxy" target="_blank" className="px-2">
-                <img src="../src/assets/twitter.png" alt="twitter" width={35} />
+                <img src="./src/assets/twitter.png" alt="twitter" width={35} />
               </a>
             </div>
             {/* tech stack beginning */}
