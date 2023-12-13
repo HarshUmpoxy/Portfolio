@@ -11,7 +11,7 @@ const Project = () => {
     {
       id: 1,
       title: "SocialEcho",
-      image: {socialechoimg},
+      image: "../../assets/SocialEcho.jpg",
 
       projectDescription:
         "A blogging application made using ReactJs, tailwind Css as front-end and Appwrite as a backend service. Extensive scalable application with micro-components has been hosted on Vercel",
