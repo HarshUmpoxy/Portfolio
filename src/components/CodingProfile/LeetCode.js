@@ -12,7 +12,7 @@ const obj= {
   'easy': 115,
   'medium': 255,
   'hard': 80,
-  'totalQ': 450
+  'totalQ': 460
 }
 return obj;
     }

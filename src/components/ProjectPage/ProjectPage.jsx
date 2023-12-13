@@ -2,13 +2,16 @@ import React from "react";
 import "./ProjectPage.css";
 import { FaGithub } from "react-icons/fa";
 import {HiExternalLink} from "react-icons/hi"
+import socialechoimg from "../../assets/SocialEcho.jpg"
+import attendancetrackerimg from "../../assets/AttendanceTracker.jpg"
+import smartshopimg from "../../smartShop.png"
 
 const Project = () => {
   const projectData = [
     {
       id: 1,
       title: "SocialEcho",
-      image: "../src/assets/SocialEcho.jpg",
+      image: {socialechoimg},
 
       projectDescription:
         "A blogging application made using ReactJs, tailwind Css as front-end and Appwrite as a backend service. Extensive scalable application with micro-components has been hosted on Vercel",
@@ -25,7 +28,7 @@ const Project = () => {
     {
       id: 2,
       title: "Attendance Tracking System",
-      image: "../src/assets/AttendanceTracker.jpg",
+      image: {attendancetrackerimg},
       projectDescription:
         "Built a website using ReactJs that tracks the attendance of students. Proper CRUD operations have been implemented and each student can track his/her login after successful login. Authentication, middleware, jws token, expiration of login and Google GeoLocation API has been integrated in the project.",
       stack: [
@@ -41,7 +44,7 @@ const Project = () => {
     {
       id: 3,
       title: "Smart Shop Recommender",
-      image: "../src/assets/smartShop.png",
+      image: {smartshopimg},
       projectDescription:
         "Integrated Smart Shop Recommender, merging Fashion, Electronics, and Books systems. Utilized collaborative and content-based filtering, plus TensorFlow for image analysis, achieving personalized recommendations. Expert data preprocessing ensured seamless handling of extensive datasets.",
       stack: [

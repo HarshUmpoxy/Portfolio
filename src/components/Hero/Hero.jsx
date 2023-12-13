@@ -1,6 +1,19 @@
 import React from "react";
 import "./Hero.css";
 import myimage from "../../assets/myimg.jpg"
+import githubimg from "../../assets/github.png"
+import linkedinimg from "../../assets/linkedin.png"
+import twitterimg from "../../assets/twitter.png"
+import apiimg from "../../assets/api.png"
+import htmlimg from "../../assets/html.png"
+import tailwindimg from "../../assets/tailwindcss.png"
+import reactimg from "../../assets/react.png"
+import jsimg from "../../assets/js.png"
+import pythonimg from "../../assets/python.png"
+import linuximg from "../../assets/linux.png"
+import mongoDbimg from "../../assets/mongoDb.png"
+import mysqlimg from "../../assets/mySql.png"
+import nodeJsimg from "../../assets/nodeJs.png"
 
 const Hero = () => {
   return (
@@ -21,13 +34,13 @@ const Hero = () => {
             </div>
             <div className="flex  justify-start px-2 pt-6 pb-6 mx-auto">
               <a href="https://github.com/HarshUmpoxy" target="_blank" className="px-2">
-                <img src="./src/assets/github.png" alt="github" width={35} />
+                <img src={githubimg} alt="github" width={35} />
               </a>
               <a href="https://www.linkedin.com/in/harsh-kumar-24318b207/" target="_blank" className="px-2">
-                <img src="./src/assets/linkedin.png" alt="linkedin" width={35} />
+                <img src={linkedinimg} alt="linkedin" width={35} />
               </a>
               <a href="https://twitter.com/HarshUmpoxy" target="_blank" className="px-2">
-                <img src="./src/assets/twitter.png" alt="twitter" width={35} />
+                <img src={twitterimg} alt="twitter" width={35} />
               </a>
             </div>
             {/* tech stack beginning */}
@@ -39,16 +52,16 @@ const Hero = () => {
                 </h4>
               </div>
               <div className="gap-6 flex flex-wrap">
-                <img src="../../assets/api.png" alt="html" width={50} />
-                <img src="./src/assets/html.png" alt="html" width={50} />
-                <img src="./src/assets/tailwindcss.png" alt="html" width={50} />
-                <img src="./src/assets/react.png" alt="python" width={50} />
-                <img src="./src/assets/js.png" alt="html" width={50} />
-                <img src="./src/assets/python.png" alt="react" width={50} />
-                <img src="./src/assets/linux.png" alt="html" width={50} />
-                <img src="./src/assets/mongoDb.png" alt="html" width={50} />
-                <img src="./src/assets/mySql.png" alt="css" width={50} />
-                <img src="./src/assets/nodeJs.png" alt="js" width={50} />               
+                <img src={apiimg} alt="html" width={50} />
+                <img src={htmlimg} alt="html" width={50} />
+                <img src={tailwindimg} alt="html" width={50} />
+                <img src={pythonimg} alt="python" width={50} />
+                <img src={jsimg} alt="html" width={50} />
+                <img src={reactimg} alt="react" width={50} />
+                <img src={linuximg} alt="html" width={50} />
+                <img src={mongoDbimg} alt="html" width={50} />
+                <img src={mysqlimg} alt="css" width={50} />
+                <img src={nodeJsimg} alt="js" width={50} />               
                 
               </div>
             </div>

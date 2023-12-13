@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import computeimg from '../../assets/computeLogic.jpg'
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <div className="flex md:justify-between max-md:flex-col">
         {/* left side */}
         <div className="w-1/2 about-image max-md:hidden">
-          <img src="../src/assets/computeLogic.jpg" alt="frontend" width={400} />
+          <img src={computeimg} alt="frontend" width={400} />
         </div>
         {/* right side */}
         <div className="md:w-1/2 about">
