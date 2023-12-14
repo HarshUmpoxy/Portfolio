@@ -102,21 +102,21 @@ const CodingProfiles = () => {
       platform: "LeetCode",
       username: "algoacer",
       url: "https://leetcode.com/algoacer/",
-      img: {leetcodeimg},
+      img: leetcodeimg,
       profileData: leetProfileData,
     },
     {
       platform: "Codeforces",
       username: "algoacer",
       url: "https://codeforces.com/profile/algoacer",
-      img: {codeforcesimg},
+      img: codeforcesimg,
       profileData: codeforcesProfileData,
     },
     {
       platform: "CodeChef",
       username: "h_arsh79",
       url: "https://www.codechef.com/users/h_arsh79",
-      img: {codechefimg},
+      img: codechefimg,
       profileData: codechefProfileData,
     }
     
