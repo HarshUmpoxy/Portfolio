@@ -11,7 +11,7 @@ const Project = () => {
     {
       id: 1,
       title: "SocialEcho",
-      image: "../../assets/SocialEcho.jpg",
+      image: "./src/assets/SocialEcho.jpg",
 
       projectDescription:
         "A blogging application made using ReactJs, tailwind Css as front-end and Appwrite as a backend service. Extensive scalable application with micro-components has been hosted on Vercel",
@@ -28,7 +28,7 @@ const Project = () => {
     {
       id: 2,
       title: "Attendance Tracking System",
-      image: "../../assets/AttendanceTracker.jpg",
+      image: "./src/assets/AttendanceTracker.jpg",
       projectDescription:
         "Built a website using ReactJs that tracks the attendance of students. Proper CRUD operations have been implemented and each student can track his/her login after successful login. Authentication, middleware, jws token, expiration of login and Google GeoLocation API has been integrated in the project.",
       stack: [
@@ -44,7 +44,7 @@ const Project = () => {
     {
       id: 3,
       title: "Smart Shop Recommender",
-      image: "../../assets/smartShop.png",
+      image: "./src/assets/smartShop.png",
       projectDescription:
         "Integrated Smart Shop Recommender, merging Fashion, Electronics, and Books systems. Utilized collaborative and content-based filtering, plus TensorFlow for image analysis, achieving personalized recommendations. Expert data preprocessing ensured seamless handling of extensive datasets.",
       stack: [

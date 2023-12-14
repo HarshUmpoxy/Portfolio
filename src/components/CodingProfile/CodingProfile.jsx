@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { LeetcodeProfile } from './LeetCode';
 import { CodeforcesProfile } from './Codeforces';
 import { CodechefProfile} from './Codechef';
-import leetcodeimg from '../../assets/leetcode.png'
-import codeforcesimg from '../../assets/codeforces.png'
-import codechefimg from '../../assets/codechef.png'
+import leetcodeimg from "../../assets/leetcode.png"
+import codeforcesimg from "../../assets/codeforces.png"
+import codechefimg from "../../assets/codechef.png"
 
 // Create a separate ProfileCard component
 const ProfileCard = ({ platform, username, url, img, profileData }) => {
