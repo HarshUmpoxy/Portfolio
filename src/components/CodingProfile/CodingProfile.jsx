@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { LeetcodeProfile } from './LeetCode';
-import { CodeforcesProfile } from './Codeforces';
-import { CodechefProfile} from './Codechef';
-import leetcodeimg from '../../assets/leetcode.png'
-import codeforcesimg from '../../assets/codeforces.png'
-import codechefimg from '../../assets/codechef.png'
+import { LeetcodeProfile } from "./LeetCode";
+import { CodeforcesProfile } from "./Codeforces";
+import { CodechefProfile } from "./Codechef";
+import leetcodeimg from "../../assets/leetcode.png";
+import codeforcesimg from "../../assets/codeforces.png";
+import codechefimg from "../../assets/codechef.png";
 
 // Create a separate ProfileCard component
 const ProfileCard = ({ platform, username, url, img, profileData }) => {
+  console.log(url, img);
   return (
     <div className="flex-shrink-0 max-md:w-2/3  w-60 bg-white p-4 rounded-md shadow-sm hover:shadow-xl hover:scale-105 transition duration-300 ease-in-out">
       <h2 className="text-xl font-semibold">{platform}</h2>
@@ -68,11 +69,11 @@ const CodingProfiles = () => {
         console.error(error);
       }
     }
-    
+
     fetchLeetcodeProfile();
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     async function fetchCodeforcesProfile() {
       try {
         const data = await CodeforcesProfile();
@@ -84,52 +85,53 @@ const CodingProfiles = () => {
     fetchCodeforcesProfile();
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     async function fetchCodechefProfile() {
       try {
         const data = await CodechefProfile();
-        console.log("codechef",data);
+        console.log("codechef", data);
         setCodechefProfileData(data);
       } catch (error) {
         console.error(error);
       }
     }
     fetchCodechefProfile();
-  }, [])
+  }, []);
 
   const profiles = [
     {
       platform: "LeetCode",
       username: "algoacer",
       url: "https://leetcode.com/algoacer/",
-      img: {leetcodeimg},
+      img: leetcodeimg,
       profileData: leetProfileData,
     },
     {
       platform: "Codeforces",
       username: "algoacer",
       url: "https://codeforces.com/profile/algoacer",
-      img: {codeforcesimg},
+      img: codeforcesimg,
       profileData: codeforcesProfileData,
     },
     {
       platform: "CodeChef",
       username: "h_arsh79",
       url: "https://www.codechef.com/users/h_arsh79",
-      img: {codechefimg},
+      img: codechefimg,
       profileData: codechefProfileData,
-    }
-    
+    },
   ];
 
   return (
     <div className="md:h-1/2">
       <h1 className="text-2xl font-semibold my-4">My Coding Profiles</h1>
-      <div className="bg-gray-100 p-4 
+      <div
+        className="bg-gray-100 p-4 
       overflow-x-scroll whitespace-nowrap"
       >
-        <div className="flex justify-around"
-        // justify-around"
+        <div
+          className="flex justify-around"
+          // justify-around"
         >
           {/* <div className="mx-3"> */}
           {profiles.map((profile, index) => (
