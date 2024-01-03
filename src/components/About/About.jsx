@@ -17,12 +17,9 @@ const About = () => {
           </div>
           <div className="about-para flex items-center">
             <p className="text-xl p-1 pt-8">
-              A
-              Passionate and dedicated Frontend Developer with a keen eye for
-              detail and a strong foundation in web technologies like HTML, CSS,
-              JavaScript and React with a deep understanding of responsive
-              design and user experience. Committed to continuous learning and staying updated
-              with the latest industry trends."
+              Hey Folks, I am an aspiring Software Developer with a passion for problem solving be it on Coding Platforms or even finding Bugs in a Code. I have a passion to contribute and make Projects. I am open to learning DevOps and combining it with my Full Stack Knowledge makes me an all-rounder to contribute to any SDE role.
+              <br></br><br></br>
+              Eager to contribute to the Industry.
             </p>
           </div>
         </div>

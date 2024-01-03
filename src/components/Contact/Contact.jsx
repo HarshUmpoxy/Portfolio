@@ -40,7 +40,7 @@ const Contact = () => {
       ) : <p className='text-[#0775F0] font-semibold pt-2 pb-8 md:text-3xl'>Feel Free to React out</p>}
       <p className='pt-6 text-lg font-semibold font-montserrat pb-1'>Mail me here: <img src='../src/assets/mail.png' className='h-8 inline-flex'></img>
       <br/>
-      <a href='mailto:cybercreaterharsh@gmail.com' className='text-base bg-blue-500 hover:bg-blue-600 text-white rounded-l p-1 pt-1 px-3'>harshgarg2550@gmail.com</a></p>
+      <a href='mailto:cybercreaterharsh@gmail.com' className='text-base bg-blue-500 hover:bg-blue-600 text-white rounded-l p-1 pt-1 px-3'>cybercreaterharsh@gmail.com</a></p>
       </div>
       <form onSubmit={sendEmail} className="space-y-4 md:w-1/3 px-2 max-md:pt-8">
         <div>
