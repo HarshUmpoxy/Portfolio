@@ -37,7 +37,7 @@ const Contact = () => {
       <div>
       {isSent ? (
         <p className="text-green-500 md:text-3xl">Email Sent! Thank you.</p>
-      ) : <p className='text-[#0775F0] font-semibold pt-2 pb-8 md:text-3xl'>Feel Free to React out</p>}
+      ) : <p className='text-[#0775F0] font-semibold pt-2 pb-8 md:text-3xl'>Feel Free to React out <a href='https://linktr.ee/harshumpoxy'>Linktree</a></p>}
       <p className='pt-6 text-lg font-semibold font-montserrat pb-1'>Mail me here: <img src='../src/assets/mail.png' className='h-8 inline-flex'></img>
       <br/>
       <a href='mailto:cybercreaterharsh@gmail.com' className='text-base bg-blue-500 hover:bg-blue-600 text-white rounded-l p-1 pt-1 px-3'>cybercreaterharsh@gmail.com</a></p>

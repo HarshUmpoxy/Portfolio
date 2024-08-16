@@ -38,7 +38,7 @@ const Header = () => {
                 <a href="#Contact">Contact</a>
               </li>
             </ul>
-            
+            `
           <div className="position:absolute md:hidden">
           <OutsideClickHandler onOutsideClick={ () => SetOpenMenu(false) }> 
             <GiHamburgerMenu  className=' md:hidden h-6 w-8' onClick={() => SetOpenMenu((prev) => !prev)} />
